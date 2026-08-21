@@ -7,8 +7,19 @@
     if (sessionStorage.getItem("yokabio_auth") === "true") {
       return;
     }
-    var __pw = prompt("パスワードを入力してください");
-    if (__pw === "YOKABIO") {
+    var __authOK = false;
+    while (true) {
+      var __pw = prompt("パスワードを入力してください");
+      if (__pw === null) {
+        break;
+      }
+      if (__pw === "YOKABIO2026") {
+        __authOK = true;
+        break;
+      }
+      alert("パスワードが間違っています");
+    }
+    if (__authOK) {
       sessionStorage.setItem("yokabio_auth", "true");
     } else {
       document.addEventListener("DOMContentLoaded", function () {
