@@ -80,12 +80,12 @@
         <span class="font-display font-extrabold tracking-tight text-lg text-slate-900">YOKABIO</span>
       </a>
       <nav class="hidden md:flex items-center gap-3 text-sm font-medium text-slate-600">
-        <a href="index.html" class="rounded-full border border-sky-400 px-4 py-1.5 hover:border-sky-500 hover:bg-sky-50 hover:text-sky-700 transition-colors">TOP</a>
-        <a href="about.html" class="rounded-full border border-sky-400 px-4 py-1.5 hover:border-sky-500 hover:bg-sky-50 hover:text-sky-700 transition-colors">私たちについて</a>
-        <a href="achievements.html" class="rounded-full border border-sky-400 px-4 py-1.5 hover:border-sky-500 hover:bg-sky-50 hover:text-sky-700 transition-colors">大会実績</a>
-        <a href="members.html" class="rounded-full border border-sky-400 px-4 py-1.5 hover:border-sky-500 hover:bg-sky-50 hover:text-sky-700 transition-colors">メンバー</a>
-        <a href="donation.html" class="rounded-full border border-sky-400 px-4 py-1.5 hover:border-sky-500 hover:bg-sky-50 hover:text-sky-700 transition-colors">寄付・協賛</a>
-        <a href="contact.html" class="rounded-full border border-sky-400 px-4 py-1.5 hover:border-sky-500 hover:bg-sky-50 hover:text-sky-700 transition-colors">お問い合わせ</a>
+        <a href="index.html" class="rounded-md border border-sky-400 px-4 py-1.5 hover:border-sky-500 hover:bg-sky-50 hover:text-sky-700 transition-colors">TOP</a>
+        <a href="about.html" class="rounded-md border border-sky-400 px-4 py-1.5 hover:border-sky-500 hover:bg-sky-50 hover:text-sky-700 transition-colors">私たちについて</a>
+        <a href="achievements.html" class="rounded-md border border-sky-400 px-4 py-1.5 hover:border-sky-500 hover:bg-sky-50 hover:text-sky-700 transition-colors">大会実績</a>
+        <a href="members.html" class="rounded-md border border-sky-400 px-4 py-1.5 hover:border-sky-500 hover:bg-sky-50 hover:text-sky-700 transition-colors">メンバー</a>
+        <a href="donation.html" class="rounded-md border border-sky-400 px-4 py-1.5 hover:border-sky-500 hover:bg-sky-50 hover:text-sky-700 transition-colors">寄付・協賛</a>
+        <a href="contact.html" class="rounded-md border border-sky-400 px-4 py-1.5 hover:border-sky-500 hover:bg-sky-50 hover:text-sky-700 transition-colors">お問い合わせ</a>
       </nav>
       <a href="#funds" class="text-sm font-bold bg-brand-700 hover:bg-brand-800 text-white px-5 py-2.5 rounded-full transition-colors">
         寄付する
@@ -111,28 +111,21 @@
   </section>
 
   <!-- About Us -->
-  <section id="about" class="relative py-10 md:py-12 bg-white">
-    <div class="max-w-6xl mx-auto px-6 md:px-10 grid md:grid-cols-5 gap-12 md:gap-16 items-start">
+  <section id="about" class="relative bg-white overflow-hidden">
+    <div class="grid md:grid-cols-2 w-full">
 
-      <div class="md:col-span-2">
-        <div class="sticky top-28">
-          <h2 class="font-display font-black text-brand-700 text-6xl md:text-7xl lg:text-8xl leading-none">
-            About<br>Us
-          </h2>
-          <p class="mt-6 text-xl md:text-2xl font-bold text-slate-800">私たちについて</p>
-          <div class="mt-8 w-14 h-1.5 bg-brand-600 rounded-full"></div>
-
-          <div class="mt-10">
-            <a href="about.html" class="group inline-flex items-center gap-2 text-brand-700 font-bold border border-brand-200 rounded-full px-6 py-3 transition-all duration-300 hover:border-brand-600 hover:bg-brand-600 hover:text-white">
-              詳しくはこちら
-              <span aria-hidden="true" class="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
-            </a>
-          </div>
-        </div>
+      <div>
+        <img src="biomod_research.jpg" alt="YOKABIOの研究風景" class="w-full h-full object-cover">
       </div>
 
-      <div class="md:col-span-3">
-        <div class="space-y-6 text-slate-600 text-base md:text-lg leading-loose">
+      <div class="py-12 md:py-20 px-8 md:px-16">
+        <h2 class="font-display font-black text-brand-700 text-5xl sm:text-6xl lg:text-7xl leading-none tracking-tight">
+          About Us
+        </h2>
+        <p class="mt-4 text-xl font-bold text-slate-800">私たちについて</p>
+        <div class="w-14 h-1.5 bg-brand-600 rounded-full my-4"></div>
+
+        <div class="max-w-xl space-y-6 text-slate-600 text-base md:text-lg leading-loose">
           <p>
             私たちは<span class="font-bold text-slate-900">BIOMOD</span>に挑戦する
             <span class="font-bold text-brand-700">YOKABIO</span>です。BIOMODは、DNAなどの生体分子を用いて新しい分子システムを設計・構築する国際大会です。
@@ -141,25 +134,33 @@
             私たちは、生体分子を材料として、目的に応じて働く分子ロボットや分子システムの設計・開発に取り組んでいます。これらの技術は、将来的に病気の早期発見や治療、環境問題の解決など、社会課題の解決につながることが期待されています。
           </p>
         </div>
+
+        <div class="mt-8">
+          <a href="about.html" class="group inline-flex items-center gap-2 text-brand-700 font-bold border border-brand-200 rounded-full px-6 py-3 transition-all duration-300 hover:border-brand-600 hover:bg-brand-600 hover:text-white">
+            詳しくはこちら
+            <span aria-hidden="true" class="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
+          </a>
+        </div>
       </div>
 
     </div>
   </section>
 
   <!-- Achievements -->
-  <section id="achievements" class="relative py-10 md:py-12 bg-gray-700">
-    <div class="max-w-6xl mx-auto px-6 md:px-10 grid md:grid-cols-5 gap-12 md:gap-16 lg:gap-20 items-start">
+  <section id="achievements" class="relative py-16 md:py-20 bg-gray-700 bg-cover" style="background-image: url('biomod2025.jpg'); background-position: center top;">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative z-10 max-w-6xl mx-auto px-6 md:px-10 grid md:grid-cols-5 gap-12 md:gap-16 lg:gap-20 items-start">
 
       <div class="md:col-span-2 min-w-0">
         <div class="sticky top-28">
           <h2 class="font-display font-black text-yellow-300 text-5xl md:text-6xl leading-none break-keep max-w-full">
             Competition<br>Results
           </h2>
-          <p class="mt-6 text-xl md:text-2xl font-bold text-white">過去の大会実績</p>
+          <p class="mt-6 text-xl md:text-2xl font-bold text-gray-300 [text-shadow:1px_1px_3px_rgba(0,0,0,0.8)]">過去の大会実績</p>
           <div class="mt-8 w-14 h-1.5 bg-yellow-300 rounded-full"></div>
 
           <div class="mt-10">
-            <a href="achievements.html" class="group inline-flex items-center gap-2 text-white font-bold border border-white/30 rounded-full px-6 py-3 transition-all duration-300 hover:border-yellow-300 hover:bg-yellow-300 hover:text-gray-900">
+            <a href="achievements.html" class="group inline-flex items-center gap-2 text-gray-300 [text-shadow:1px_1px_3px_rgba(0,0,0,0.8)] font-bold border border-white/30 rounded-full px-6 py-3 transition-all duration-300 hover:border-yellow-300 hover:bg-yellow-300 hover:text-gray-900">
               詳しくはこちら
               <span aria-hidden="true" class="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
             </a>
@@ -168,9 +169,9 @@
       </div>
 
       <div class="md:col-span-3 min-w-0">
-        <div class="space-y-6 text-gray-200 text-base md:text-lg leading-loose break-words">
+        <div class="space-y-6 text-white [text-shadow:1px_1px_4px_rgba(0,0,0,0.9)] text-base md:text-lg leading-loose break-words">
           <p>
-            2023年には分子ロボティクス分野で「Molecular Robotics Award」を受賞し、2025年にはBIOMODで<span class="font-bold text-white">総合3位</span>という結果を残しました。今年はこれらの実績をさらに超えるべく、優勝を目指して研究を進めています。
+            2023年には分子ロボティクス分野で「Molecular Robotics Award」を受賞し、2025年にはBIOMODで<span class="font-bold text-white [text-shadow:1px_1px_4px_rgba(0,0,0,0.9)]">総合3位</span>という結果を残しました。今年はこれらの実績をさらに超えるべく、優勝を目指して研究を進めています。
           </p>
         </div>
 
@@ -186,8 +187,8 @@
                 <p class="font-display font-black text-yellow-300 text-xs md:text-sm tracking-widest uppercase">
                   BIOMOD 2023
                 </p>
-                <p class="mt-1.5 font-bold text-white text-base md:text-lg leading-snug">Gold &amp; 特別賞 受賞</p>
-                <p class="mt-2 text-sm text-gray-300 leading-relaxed">
+                <p class="mt-1.5 font-bold text-gray-300 [text-shadow:1px_1px_3px_rgba(0,0,0,0.8)] text-base md:text-lg leading-snug">Gold &amp; 特別賞 受賞</p>
+                <p class="mt-2 text-sm text-gray-300 [text-shadow:1px_1px_3px_rgba(0,0,0,0.8)] leading-relaxed">
                   「Gold Project Award」および「Molecular Robotics Award」を獲得
                 </p>
               </div>
@@ -201,9 +202,9 @@
                 <p class="font-display font-black text-yellow-300 text-xs md:text-sm tracking-widest uppercase">
                   BIOMOD 2025
                 </p>
-                <p class="mt-1.5 font-bold text-white text-base md:text-lg leading-snug">世界総合3位を受賞</p>
-                <p class="mt-2 text-sm text-gray-300 leading-relaxed">
-                  昨年度の大会で大きく飛躍し、<span class="font-bold text-white">世界総合3位</span>の快挙を達成
+                <p class="mt-1.5 font-bold text-gray-300 [text-shadow:1px_1px_3px_rgba(0,0,0,0.8)] text-base md:text-lg leading-snug">世界総合3位を受賞</p>
+                <p class="mt-2 text-sm text-gray-300 [text-shadow:1px_1px_3px_rgba(0,0,0,0.8)] leading-relaxed">
+                  昨年度の大会で大きく飛躍し、<span class="font-bold text-gray-300 [text-shadow:1px_1px_3px_rgba(0,0,0,0.8)]">世界総合3位</span>の快挙を達成
                 </p>
               </div>
             </li>
@@ -216,9 +217,9 @@
                 <p class="font-display font-black text-yellow-300 text-xs md:text-sm tracking-widest uppercase">
                   BIOMOD 2026 Target
                 </p>
-                <p class="mt-1.5 font-bold text-white text-base md:text-lg leading-snug">優勝（Grand Prize）への挑戦</p>
-                <p class="mt-2 text-sm text-gray-300 leading-relaxed">
-                  これまでの実績を糧に、<span class="font-bold text-white">世界一</span>を目指して挑戦中
+                <p class="mt-1.5 font-bold text-gray-300 [text-shadow:1px_1px_3px_rgba(0,0,0,0.8)] text-base md:text-lg leading-snug">優勝（Grand Prize）への挑戦</p>
+                <p class="mt-2 text-sm text-gray-300 [text-shadow:1px_1px_3px_rgba(0,0,0,0.8)] leading-relaxed">
+                  これまでの実績を糧に、<span class="font-bold text-gray-300 [text-shadow:1px_1px_3px_rgba(0,0,0,0.8)]">世界一</span>を目指して挑戦中
                 </p>
               </div>
             </li>
@@ -231,29 +232,32 @@
 
   <!-- Members -->
   <section id="members" class="relative py-24 md:py-32 bg-brand-50/60">
-    <div class="max-w-6xl mx-auto px-6 md:px-10 grid md:grid-cols-12 gap-12 md:gap-16 items-start">
+    <div class="max-w-6xl mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-12 md:gap-16 items-center">
 
-      <div class="md:col-span-4">
-        <div class="sticky top-28">
-          <h2 class="font-display font-black text-brand-700 text-5xl md:text-6xl leading-none">
-            Members
-          </h2>
-          <p class="mt-4 text-lg md:text-xl font-bold text-slate-800">メンバー</p>
-          <div class="mt-6 w-14 h-1.5 bg-brand-600 rounded-full"></div>
+      <div>
+        <h2 class="font-display font-black text-brand-700 text-5xl sm:text-6xl lg:text-7xl leading-none tracking-tight">
+          Members
+        </h2>
+        <p class="mt-4 text-lg md:text-xl font-bold text-slate-800">メンバー</p>
+        <div class="mt-6 w-14 h-1.5 bg-brand-600 rounded-full"></div>
 
-          <div class="mt-8">
-            <a href="members.html" class="group inline-flex items-center gap-2 text-brand-700 font-bold border border-brand-200 rounded-full px-6 py-3 transition-all duration-300 hover:border-brand-600 hover:bg-brand-600 hover:text-white">
-              詳しくはこちら
-              <span aria-hidden="true" class="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
-            </a>
-          </div>
+        <p class="mt-8 text-slate-600 text-base md:text-lg leading-loose">
+          YOKABIOでは現在、2年生1名、3年生3名、4年生5名の計<span class="font-bold text-slate-900">9名</span>で活動しています。物理情報工学科、生命化学情報工学科、知能情報工学科、知的システム工学科など、様々な分野の学生が集まっています。
+        </p>
+
+        <div class="mt-8">
+          <a href="members.html" class="group inline-flex items-center gap-2 text-brand-700 font-bold border border-brand-200 rounded-full px-6 py-3 transition-all duration-300 hover:border-brand-600 hover:bg-brand-600 hover:text-white">
+            詳しくはこちら
+            <span aria-hidden="true" class="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
+          </a>
         </div>
       </div>
 
-      <div class="md:col-span-8">
-        <p class="text-slate-600 text-base md:text-lg leading-loose">
-          YOKABIOでは現在、2年生1名、3年生3名、4年生5名の計<span class="font-bold text-slate-900">9名</span>で活動しています。物理情報工学科、生命化学情報工学科、知能情報工学科、知的システム工学科など、様々な分野の学生が集まっています。
-        </p>
+      <div class="hidden md:flex items-center justify-center">
+        <!-- ここに後からロゴを挿入 -->
+        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full border-2 border-dashed border-emerald-600/40 bg-emerald-50/50 flex items-center justify-center">
+          <span class="font-display font-bold text-emerald-600/60 text-lg tracking-widest">LOGO</span>
+        </div>
       </div>
 
     </div>
@@ -261,9 +265,10 @@
 
   <!-- Use of Funds -->
   <section id="funds" class="relative py-24 md:py-32 bg-brand-900 overflow-hidden">
-    <div class="absolute inset-0 dot-grid opacity-20"></div>
+    <img src="biomod_announcement_2.jpg" alt="" class="absolute inset-0 w-full h-full object-cover z-0" />
+    <div class="absolute inset-0 bg-emerald-950/85 z-0"></div>
 
-    <div class="relative max-w-6xl mx-auto px-6 md:px-10 grid md:grid-cols-5 gap-12 md:gap-16 items-start">
+    <div class="relative z-10 max-w-6xl mx-auto px-6 md:px-10 grid md:grid-cols-5 gap-12 md:gap-16 items-start">
       <div class="md:col-span-2">
         <h2 class="font-display font-black text-white text-5xl md:text-6xl leading-none">
           Donations &amp;<br>Sponsorship
