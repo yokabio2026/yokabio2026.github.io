@@ -2,32 +2,6 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<script>
-  (function () {
-    if (sessionStorage.getItem("yokabio_auth") === "true") {
-      return;
-    }
-    var __authOK = false;
-    while (true) {
-      var __pw = prompt("パスワードを入力してください");
-      if (__pw === null) {
-        break;
-      }
-      if (__pw === "YOKABIO2026") {
-        __authOK = true;
-        break;
-      }
-      alert("パスワードが間違っています");
-    }
-    if (__authOK) {
-      sessionStorage.setItem("yokabio_auth", "true");
-    } else {
-      document.addEventListener("DOMContentLoaded", function () {
-        document.body.innerHTML = "";
-      });
-    }
-  })();
-</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Competition Results | YOKABIO</title>
 <script src="https://cdn.tailwindcss.com"></script>

@@ -2,32 +2,6 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<script>
-  (function () {
-    if (sessionStorage.getItem("yokabio_auth") === "true") {
-      return;
-    }
-    var __authOK = false;
-    while (true) {
-      var __pw = prompt("パスワードを入力してください");
-      if (__pw === null) {
-        break;
-      }
-      if (__pw === "YOKABIO2026") {
-        __authOK = true;
-        break;
-      }
-      alert("パスワードが間違っています");
-    }
-    if (__authOK) {
-      sessionStorage.setItem("yokabio_auth", "true");
-    } else {
-      document.addEventListener("DOMContentLoaded", function () {
-        document.body.innerHTML = "";
-      });
-    }
-  })();
-</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Us | YOKABIO</title>
 <script src="https://cdn.tailwindcss.com"></script>
@@ -109,26 +83,26 @@
   <section class="py-20 md:py-28 bg-white">
     <div class="max-w-6xl mx-auto px-6 md:px-10">
       <h2 class="font-display font-black text-brand-500 text-3xl md:text-4xl leading-tight">
-        進捗状況について
+        研究内容について
       </h2>
       <div class="mt-5 w-14 h-1.5 bg-brand-600 rounded-full"></div>
 
-      <div class="mt-12 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-        <div class="border-2 border-dashed border-slate-200 rounded-2xl p-8 bg-slate-50/60">
-          <p class="text-slate-400 leading-loose">
-            ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-          </p>
-          <p class="mt-4 text-slate-400 leading-loose">
-            ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-          </p>
-        </div>
-
-        <div class="aspect-video md:aspect-square border-2 border-dashed border-slate-300 rounded-2xl bg-slate-100 flex flex-col items-center justify-center gap-3 text-slate-400">
-          <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909M3 6h18a1.5 1.5 0 0 1 1.5 1.5v9a1.5 1.5 0 0 1-1.5 1.5H3A1.5 1.5 0 0 1 1.5 16.5v-9A1.5 1.5 0 0 1 3 6Zm10.5 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
-          </svg>
-          <p class="text-sm font-medium">画像・図解が入ります</p>
-        </div>
+      <div class="mt-12 space-y-6 text-slate-600 text-base md:text-lg leading-loose">
+        <p>
+          生体内では，細胞間の情報や物質のやり取りがさまざまな生命現象を支えています．このような細胞間コミュニケーションを人工的に再現するために，DNAを用いてGUV（Giant Unilamellar Vesicle）同士を接続する研究が行われています．しかし，これまでの研究には，複数のGUVを接続する場合に意図しない接続や過剰な凝集が生じ，接続する相手や接続数を制御できないという課題がありました．本研究では，DNAによるGUV間の接続とDNA鎖置換反応を組み合わせ，GUVの接続相手と接続数を制御したネットワーク「ALIGN（Accurately Linkable GUV Network）」を提案します．
+        </p>
+        <p>
+          GUV表面に異なるDNA配列を配置し，相補的なDNA同士の結合によって特定のGUVを選択的に接続します．さらに，鎖置換反応を利用して他のDNAとの結合を阻害することで，一つのGUVが過剰に多くのGUVと接続することを防ぎ，意図した構造を持つGUVネットワークの構築を目指します．
+        </p>
+        <p>
+          この設計の有効性を検証するため，DNAの結合や解離の過程と鎖置換反応をモデル化し，GUV間の接続挙動をシミュレーションしました．また， DNAの長さや解離度などのパラメータを変化させ，適切な接続と過剰な連結の抑制を両立する条件を探索しています．
+        </p>
+        <p>
+          また，接続したGUV間で物質交換を実現するため，α-ヘモリシンによってGUV膜に形成した細孔とTRIMEBを用いた物質放出機構を組み合わせます．TRIMEBは，α-ヘモリシン同士が近接した際に物理的に外れる特性を持つため， GUV同士の接続をきっかけに物質交換が開始される機構として使用します．
+        </p>
+        <p>
+          現在は，DNAによるGUV間の接続と鎖置換反応を組み合わせたモデルの構築・検証を進めるとともに，GUVの作製およびにα-ヘモリシンによる物質輸送機構の実験的検証を進めています．本研究により，接続相手や接続数が制御された人工細胞ネットワークを構築し，複数のGUV間で物質を段階的に移動させる基盤技術の確立を目指します．将来的には，複数の人工細胞が協調して働くネットワークの実現や，複雑な機能を持つ人工細胞システムの構築に貢献できると考えています．
+        </p>
       </div>
     </div>
   </section>
